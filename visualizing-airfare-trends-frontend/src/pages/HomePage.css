@@ -1,0 +1,45 @@
+.homepage-container {
+  background-color: #f5f7fa;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.map-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.sidebar-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+}
+
+.calendar-box,
+.location-box {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}

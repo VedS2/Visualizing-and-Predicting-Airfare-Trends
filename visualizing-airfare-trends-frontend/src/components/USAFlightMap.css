@@ -1,0 +1,89 @@
+.usa-flight-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.geography {
+  pointer-events: none;
+}
+
+.flight-route {
+  transition: stroke-width 0.2s;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
+}
+
+.airport-marker {
+  transition: r 0.2s, fill 0.2s;
+  cursor: pointer;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.legend-item span {
+  font-size: 12px;
+  color: #333;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.error-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(255, 73, 73, 0.1);
+  border: 1px solid rgba(255, 73, 73, 0.5);
+  color: #d32f2f;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 10;
+}
+
+@keyframes blink {
+  0% { stroke: #ff0000; opacity: 2; }
+  50% { stroke: #ff0000; opacity: 0.2; }
+  100% { stroke: #ff0000; opacity: 1; }
+}
+
+.blinking-line {
+  animation: blink 1.5s infinite;
+}
